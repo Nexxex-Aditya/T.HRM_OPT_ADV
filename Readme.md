@@ -18,37 +18,13 @@ Advanced integrations (CUDA Graphs, Mixed Precision + Block Scaling, Pipeline Pa
 
 A full benchmark suite comparing naive PyTorch HRM vs Triton-accelerated HRM.
 
-T_HRM_OPT_ADV/
-│── README.md
-│── requirements.txt
-│── utils.py
+- T_HRM_OPT_ADV/
+- kernels                  # Core + HRM-specific Triton kernels
+- kernels/kernels_t/               # Core Triton kernels for learning/understanding purpose
+- kernels/kernels_h/                # Core HRM-specific Triton kernels
+- benchmarks/bench_hrm.py          # Benchmark suite
 │
-├── kernels/                     # Core + HRM-specific Triton kernels
-│       kernels_t/               # Core Triton kernels
-│           ├── vector_add.py
-│           ├── matmul.py
-│           ├── group_gemm.py
-│           ├── block_scaled_matmul.py
-│           ├── layernorm.py
-│           ├── softmax.py
-│           ├── dropout.py
-│           ├── attention.py
-│           ├── libdevice_ops.py
-│       kernels_h/                # Core HRM-specific Triton kernels
-│           ├── hrm_unrolled.py
-│           ├── hrm_heads.py
-│           ├── hrm_chunks.py
-│           ├── hrm_fused_fwbw.py
-│           ├── hrm_cuda_graphs.py
-│           ├── hrm_mixed_block.py
-│           ├── hrm_pipeline.py
-│           ├── hrm_checkpoint.py
-│           ├── hrm_multi_gpu_heads.py
-├── benchmarks/
-│   ├── bench_hrm.py          # Benchmark suite
-│
-├── training_hrm_training.py      # Example training loop with something closer to HRM block design
-
+- training_hrm_training.py      # Example training loop with something closer to HRM block design
 
 ## Baseline Kernels
 
@@ -101,4 +77,4 @@ Explore HRM decoding
 Add distributed benchmarks (multi node HRM)
 
 
-# Built with by an confused guy 😕
+# Built by an confused guy 😕
