@@ -1,0 +1,9 @@
+torch
+
+triton ; platform_system != "Windows"
+
+numpy
+matplotlib
+psutil
+pynvml>=11.5
+pandas
