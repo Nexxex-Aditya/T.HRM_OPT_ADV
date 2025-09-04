@@ -76,5 +76,8 @@ Explore HRM decoding
 
 Add distributed benchmarks (multi node HRM)
 
-
+## Links:
+- https://triton-lang.org/main/getting-started/tutorials/index.html
+- https://medium.com/intuitionmachine/the-hierarchical-reasoning-model-through-the-lens-of-quaternion-process-theory-thinking-fast-and-1fc948dad97f
+- https://github.com/sapientinc/HRM/blob/main/models/hrm/hrm_act_v1.py
 # Built by an confused guy 😕
